@@ -13,6 +13,7 @@ import {
   Navigate,
   useNavigate
 } from "react-router-dom";
+var token = localStorage.getItem("token");
 
 function App() {
   

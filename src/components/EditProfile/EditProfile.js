@@ -8,7 +8,7 @@ const EditProfile = () => {
     var auxfn = "";
     var auxln = "";
     var auxemail = "";
-    var token = localStorage.getItem("tokenLocal");
+    var token = localStorage.getItem("token");
     var id_user = localStorage.getItem("user_id");
     var image_profile = "";
     const params = useParams();
@@ -25,7 +25,7 @@ const EditProfile = () => {
     axios
         .get("http://localhost:8000/api/v1/user/profile/" + id_user, {
             headers: {
-                'Authorization': "Token 7d772eff3c31851df260714078f92e032a2c0e1d",
+                'Authorization': "Token "+token,
             },
         })
         .then((response) => {
@@ -87,7 +87,7 @@ const EditProfile = () => {
         axios.put("http://localhost:8000/api/v1/user/data/" + id_user + "/", putData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
-                'Authorization': "Token 7d772eff3c31851df260714078f92e032a2c0e1d",
+                'Authorization': "Token "+token,
             }
         }).then((response) => {
             alert("se actualizaron los datos");
@@ -104,7 +104,7 @@ const EditProfile = () => {
         axios.put("http://localhost:8000/api/v1/user/profile/" + id_user, putData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
-                'Authorization': "Token 7d772eff3c31851df260714078f92e032a2c0e1d",
+                'Authorization': "Token "+token,
             }
         }).then((response) => {
             console.log(response.data);

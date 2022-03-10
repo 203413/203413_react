@@ -4,6 +4,7 @@ import axios from 'axios';
 import ProfileStyle from './Profile.module.css'
 
 const Profile = () => {
+  var token = localStorage.getItem("token");
   var first_name = "";
   var last_name = "";
   var username = "";
@@ -25,7 +26,7 @@ const Profile = () => {
     .post("http://localhost:8000/api/v1/user/profile", postData, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Token 7d772eff3c31851df260714078f92e032a2c0e1d',
+        'Authorization': 'Token '+token,
       },
     })
     .then(response => {
@@ -49,7 +50,7 @@ const Profile = () => {
       .get("http://localhost:8000/api/v1/user/profile/" + localStorage.getItem('user_id'), {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Token 7d772eff3c31851df260714078f92e032a2c0e1d',
+          'Authorization': 'Token '+token,
         },
       })
       .then((response) => {
