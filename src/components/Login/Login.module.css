@@ -1,0 +1,147 @@
+body{
+    background-image: url('./fondo.png');
+    background-size: cover;
+    
+}
+
+.container{
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+	
+}
+
+.cIzq{
+    float:left;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    background-color: #ffffff;
+    opacity: 1;
+    background: linear-gradient(135deg, #dddddd55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #dddddd 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #dddddd55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #dddddd 25%, #ffffff 25%) 0px 0/ 80px 80px; 
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.cDer{
+    color: white;
+    float:right;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.89);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formulario{
+    margin-top: 110px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size:70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.TRegister{
+  font-weight: bold;
+}
+
+
+
+.boxCont{
+	position:relative;
+	margin-bottom:25px;
+}
+.boxCont label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-event:none;
+	transition: all 0.2s ease-in-out;
+}
+.boxCont input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.boxCont input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #C294AC;	
+}
+
+.boxCont input:focus ~ label,
+.boxCont input:valid ~ label{
+	top:-12px;
+  font-size:13px;
+}
+
+
+
+
+
+
+
+.LButton {
+    margin-left: 180px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#494E70, #C294AC 50%,#FFFF);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    width: 50%;
+    width: 70px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .LButton:active,
+  .LButton:hover {
+    outline: 0;
+  }
+  
+  .LButton span {
+    background-color: rgb(5, 6, 45);
+    padding: 5px 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .LButton:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .LButton {
+      font-size: 17px;
+      min-width: 100px;
+    }
+  }

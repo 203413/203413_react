@@ -1,0 +1,211 @@
+
+
+.container{
+    text-align: center;
+    width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.cIzq{
+    float:left;
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #dddddd 12%, transparent 12.5%, transparent 87%, #dddddd 87.5%, #dddddd), linear-gradient(150deg, #dddddd 12%, transparent 12.5%, transparent 87%, #dddddd 87.5%, #dddddd), linear-gradient(30deg, #dddddd 12%, transparent 12.5%, transparent 87%, #dddddd 87.5%, #dddddd), linear-gradient(150deg, #dddddd 12%, transparent 12.5%, transparent 87%, #dddddd 87.5%, #dddddd), linear-gradient(60deg, #dddddd77 25%, transparent 25.5%, transparent 75%, #dddddd77 75%, #dddddd77), linear-gradient(60deg, #dddddd77 25%, transparent 25.5%, transparent 75%, #dddddd77 75%, #dddddd77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+
+.cDer{
+    color: white;
+    float:right;
+    width: 500px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.89);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formulario{
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size:70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 280px;
+    margin-bottom: 1px;
+}
+
+.TLogin{
+    margin-top: 1   0px;
+    font-weight: bold;
+}
+
+
+
+.boxCont{
+	position:relative;
+	margin-bottom:25px;
+}
+.boxCont label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    pointer-event:none;
+	transition: all 0.2s ease-in-out;
+}
+.boxCont input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.boxCont input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #C294AC;	
+}
+
+.boxCont input:focus ~ label,
+.boxCont input:valid ~ label{
+	top:-12px;
+    font-size:13px;
+}
+
+
+
+
+.LButton {
+    margin-left: 120px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#494E70, #C294AC 50%,#FFFF);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    width: 50%;
+    width: 70px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .LButton:active,
+  .LButton:hover {
+    outline: 0;
+  }
+  
+  .LButton span {
+    background-color: rgb(5, 6, 45);
+    padding: 5px 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .LButton:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .LButton {
+      font-size: 17px;
+      min-width: 140px;
+    }
+  }
+
+  .LButton2 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .LButton2 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  .LButton2 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  .LButton2:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  .LButton2:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .LButton2:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  

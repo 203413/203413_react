@@ -1,0 +1,206 @@
+
+
+.App{
+    background-color: rgb(0,4,31);
+    background: linear-gradient(90deg, rgba(0,4,31,1) 0%, rgba(82,0,0,1) 100%);  
+}
+
+.fondo{
+    background: rgb(0,4,31);
+    background: linear-gradient(90deg, rgba(0,4,31,1) 0%, rgba(82,0,0,1) 100%);
+}
+
+.container{
+    text-align: center;
+    
+    width: 700px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cIzq{
+    width: 200px;
+    height: 800px;
+    background-color: #ffffff;
+    opacity: 1;
+    background: linear-gradient(135deg, #dddddd55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #dddddd 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #dddddd55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #dddddd 25%, #ffffff 25%) 0px 0/ 80px 80px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+
+.cDer{
+    color: white;
+    float:right;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 500px;
+    height: 800px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formulario{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.EImg{
+    margin-left: 0px;
+    margin-top: 0px;
+    width : 250px;
+    height: 250px; 
+    border-radius: 50%; 
+    border:2px solid #ffff; 
+}
+
+
+
+
+.EButton2 {
+    top:12px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.EButton {
+    top:12px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.EButton3 {
+    position: relative;
+    top: 4em;
+    margin-left: 180px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.EButton:hover {
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+}
+
+.EButton3:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+
+
+
+
+.EBox{
+	position:relative;
+	margin-bottom:25px;
+}
+.EBox label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    
+	transition: all 0.2s ease-in-out;
+}
+.EBox input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.EBox input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #C294AC;	
+}
+
+.EBox input:focus ~ label,
+.EBox input:valid ~ label{
+	top:-12px;
+    font-size:13px;
+}
+
+
+
+
+
+  
+  
+
